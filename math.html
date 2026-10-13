@@ -183,9 +183,7 @@ function exportProgress() {
     parts.push(k.split('-')[1] + ':' + mask);
   });
   document.getElementById('expta').value =
-    document.title + '
-共 ' + TOTAL + ' 类，过关 ' + done + '，已勾 ' + keys.length + ' 类
-代码：' +
+    document.title + '\n共 ' + TOTAL + ' 类，过关 ' + done + '，已勾 ' + keys.length + ' 类\n代码：' +
     (parts.length ? parts.join(',') : '（还没勾）');
   document.getElementById('ov').style.display = 'block';
 }
